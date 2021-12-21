@@ -1,0 +1,10 @@
+rootProject.name = "Flip Board Game"
+include ':app'
+include ':features:game'
+
+include ':libraries:base'
+include ':libraries:resources'
+include ':libraries:utils'
+include ':libraries:core'
+include ':libraries:navigation'
+include ':libraries:ddsdialog'

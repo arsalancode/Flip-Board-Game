@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+
+    <string name="alert_title">Alert</string>
+    <string name="alert_desc">Are you sure you want to reset game board?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+
+</resources>

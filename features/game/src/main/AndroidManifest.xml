@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eimy.flipboard.contact">
+
+    <application android:name="com.eimy.flipboard.core.MyApp" />
+
+</manifest>

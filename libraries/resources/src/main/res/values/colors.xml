@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="off">#FFFFFFFF</color>
+    <color name="on">#888</color>
+    <color name="red">#FF2200</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <color name="background">#FFFFFFFF</color>
+
+    <color name="gray_light">##888</color>
+    <color name="transparent">#00FFFFFF</color>
+
+</resources>

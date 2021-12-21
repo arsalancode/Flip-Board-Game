@@ -1,0 +1,5 @@
+<resources>
+    <string name="flip_board_game">Flip Board Game</string>
+    <string name="biggest_rectangle">Biggest Rectangle: </string>
+    <string name="reset_board">Reset Board</string>
+</resources>

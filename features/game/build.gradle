@@ -1,0 +1,81 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion Vers.compile_sdk_version
+    buildToolsVersion Vers.build_tools_version
+
+    defaultConfig {
+        minSdkVersion Vers.min_sdk_version
+        targetSdkVersion Vers.compile_sdk_version
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+//    flavorDimensions "default"
+//
+//    productFlavors {
+//        playStore {}
+//        regular {}
+//    }
+
+    dataBinding {
+        enabled = true
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation Deps.kotlin_jdk
+    implementation Deps.app_compat
+    implementation Deps.core_ktx
+    implementation Deps.live_event
+    implementation Deps.lifecycle_viewmodel
+    implementation Deps.lifecycle_livedata
+    implementation Deps.lifecycle_runtime
+    implementation Deps.androidx_legacy
+    annotationProcessor Deps.lifecycle_compiler
+    implementation Deps.lifecycle_reactivestreams
+    implementation Deps.lifecycle_common
+    implementation Deps.constraint_layout
+    implementation Deps.recycler_view
+    implementation Deps.fragment_ktx
+    implementation Deps.sdp
+    implementation Deps.ssp
+    implementation Deps.androidx_gridlayout
+
+    testImplementation Deps.lifecycle_testing
+    testImplementation Deps.junit
+    testImplementation Deps.mockito
+    androidTestImplementation Deps.androidx_junit
+    androidTestImplementation Deps.espresso
+
+    implementation project(':libraries:ddsdialog')
+    implementation project(':libraries:core')
+    implementation project(':libraries:utils')
+    implementation project(':libraries:resources')
+    implementation project(':libraries:navigation')
+    implementation project(':libraries:base')
+}

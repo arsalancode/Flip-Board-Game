@@ -1,0 +1,1 @@
+/Volumes/Arsalan/AS/Flip-Board-Game/buildSrc/build/classes/kotlin/main/Deps.class:/Volumes/Arsalan/AS/Flip-Board-Game/buildSrc/build/classes/kotlin/main/Vers.class
