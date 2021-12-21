@@ -7,8 +7,7 @@
 * Fields that are on are drawn in gray
 * The biggest contiguous rectangle that can be formed from all selected fields is drawn in red
 * The area of the biggest rectangle is always shown at the bottom
-
-![Task Screenshot](quiz_screenshot.pdf)
+* [Complete Task Details](quiz_screenshot.pdf)
 
 ## Main Features
 1. Kotlin
